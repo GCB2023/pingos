@@ -197,12 +197,12 @@ fi
 
 if [ ! -d "./nginx" ]
 then
-    if [ ! -f "./nginx-1.17.5.tar.gz" ]; then
-        wget https://nginx.org/download/nginx-1.17.5.tar.gz
+    if [ ! -f "./nginx-1.21.6.tar.gz" ]; then
+        wget https://nginx.org/download/nginx-1.21.6.tar.gz
     fi
-    tar zxvf nginx-1.17.5.tar.gz
-    mv nginx-1.17.5 nginx
-    rm -f nginx-1.17.5.tar.gz
+    tar zxvf nginx-1.21.6.tar.gz
+    mv nginx-1.21.6 nginx
+    rm -f nginx-1.21.6.tar.gz
     cp resource/conf-template/nginx.conf nginx/conf/nginx.conf
 fi
 
