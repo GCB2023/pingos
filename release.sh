@@ -97,6 +97,9 @@ scanOS(){
         if grep -Eqi "CentOS" /etc/issue || grep -Eq "CentOS" /etc/*-release; then
             DISTRO='CentOS'
             PM='yum'
+        elif grep -Eqi "AlmaLinux" /etc/issue || grep -Eq "AlmaLinux" /etc/*-release; then
+            DISTRO='AlmaLinux'
+            PM='yum'
         elif grep -Eqi "Red Hat Enterprise Linux Server" /etc/issue || grep -Eq "Red Hat Enterprise Linux Server" /etc/*-release; then
             DISTRO='RHEL'
             PM='yum'
